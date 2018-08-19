@@ -1,0 +1,14 @@
+{
+  "name": "docker-run",
+  "version": "1.0.0",
+  "description": "test run docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker rmi server2 -f && docker build -t server2 ./ && docker-compose up",
+    "genImage": "docker build -t server2 ./",
+    "startDC": "docker-compose up",
+    "dellImage": "docker rmi server2 -f"
+  },
+  "author": "ydeshchenko@luxoft.com",
+  "license": "ISC"
+}
